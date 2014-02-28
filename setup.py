@@ -21,7 +21,7 @@
 
 
 import os
-from setuptools import setup
+from setuptools import setup, find_packages
 
 import eav
 
@@ -37,7 +37,8 @@ setup(
 
     # technical info
     version=eav.__version__,
-    packages=['eav'],
+    packages=find_packages(),
+    package_data={'': ['templates/*', ]},
     requires=['python (>= 2.5)', 'django (>= 1.1)',
               'django_autoslug (>= 1.3.9)',
               'django_view_shortcuts (>= 1.3.5)'],
