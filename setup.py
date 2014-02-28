@@ -26,35 +26,34 @@ from setuptools import setup
 import eav
 
 
-readme = open(os.path.join(os.path.dirname(__file__), 'README')).read()
+readme = open(os.path.join(os.path.dirname(__file__), 'README.md')).read()
 
 setup(
     # overview
-    name     = 'eav-django',
-    description  = ('a reusable Django application which implements the '
-                    'Entity-Attribute-Value data model.'),
-    long_description = readme,
+    name='eav-django',
+    description=('a reusable Django application which implements the '
+                 'Entity-Attribute-Value data model.'),
+    long_description=readme,
 
     # technical info
-    version  = eav.__version__,
-    packages = ['eav'],
-    requires = ['python (>= 2.5)', 'django (>= 1.1)',
-                'django_autoslug (>= 1.3.9)',
-                'django_view_shortcuts (>= 1.3.5)'],
-    provides = ['eav'],
+    version=eav.__version__,
+    packages=['eav'],
+    requires=['python (>= 2.5)', 'django (>= 1.1)',
+              'django_autoslug (>= 1.3.9)',
+              'django_view_shortcuts (>= 1.3.5)'],
+    provides=['eav'],
 
     # copyright
-    author       = 'Andrey Mikhaylenko',
-    author_email = 'andy@neithere.net',
-    license      = 'GNU Lesser General Public License (LGPL), Version 3',
+    author='Andrey Mikhaylenko',
+    author_email='andy@neithere.net',
+    license='GNU Lesser General Public License (LGPL), Version 3',
 
     # more info
-    url          = 'http://bitbucket.org/neithere/eav-django/',
-    download_url = 'http://bitbucket.org/neithere/eav-django/get/tip.zip',
+    url='https://github.com/buremba/eav-django',
 
     # categorization
-    keywords     = 'django eav flexible data model object entity attribute value',
-    classifiers  = [
+    keywords='django eav flexible data model object entity attribute value',
+    classifiers=[
         'Development Status :: 4 - Beta',
         'Environment :: Web Environment',
         'Framework :: Django',
