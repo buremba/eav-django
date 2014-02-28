@@ -38,7 +38,8 @@ setup(
     # technical info
     version=eav.__version__,
     packages=["eav"],
-    package_data={'': ['templates/admin/*', 'templates/admin/eav/*', 'templates/admin/edit_inline/*', 'locale/*/*/*.*']},
+    package_data={'': ['templates/admin/*.html', 'templates/admin/eav/*.html', 'templates/admin/edit_inline/*.html', 'l'
+                                                                                                                     'ocale/*/*/*.*']},
     requires=['python (>= 2.5)', 'django (>= 1.1)',
               'django_autoslug (>= 1.3.9)',
               'django_view_shortcuts (>= 1.3.5)'],
