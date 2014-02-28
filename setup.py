@@ -37,8 +37,8 @@ setup(
 
     # technical info
     version=eav.__version__,
-    packages=find_packages(),
-    package_data={'': ['templates/*', ]},
+    packages=["eav"],
+    package_data={'eav': ['templates/*', 'locale/*' ]},
     requires=['python (>= 2.5)', 'django (>= 1.1)',
               'django_autoslug (>= 1.3.9)',
               'django_view_shortcuts (>= 1.3.5)'],
